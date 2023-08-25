@@ -1,0 +1,175 @@
+/* Styling for summary section */
+.summary {
+    margin-top: 30px;
+}
+
+.summary-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.summary-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.summary-icon {
+    font-size: 2rem;
+    color: #007bff;
+    margin-right: 15px;
+}
+
+.summary-text h4 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.summary-text p {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+
+
+
+
+/* Reset some default styles */
+body, h1, h2, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Overall layout */
+body {
+    display: flex;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+
+/* ... (previous styles) */
+
+/* Sidebar styles */
+.sidebar {
+    width: 200px; /* Adjust as needed */
+    height: 100vh; /* Full viewport height */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    color: white;
+    padding-top: 20px;
+    transition: width 0.3s;
+    overflow-y: auto; /* Allow scrolling if content exceeds height */
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px; /* Add some spacing at the bottom */
+    border-bottom: 1px solid #555; /* Add a separator line */
+}
+
+/* Profile picture styles */
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.profile h3 {
+    color: white;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #555;
+}
+
+/* Main Content styles */
+.main-content {
+    margin-left: 200px; /* Same as sidebar width */
+    padding: 20px;
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.header h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.overview {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ... (continue with previous styles) */
+/* Style for the overview */
+.overview {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Style for the content sections */
+.content-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for section headers */
+.content-section h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Style for section text */
+.content-section p {
+    color: #666;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .content-section {
+        padding: 15px;
+    }
+}
